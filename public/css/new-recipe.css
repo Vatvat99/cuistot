@@ -1,0 +1,46 @@
+.content-top {
+    margin-bottom: 32px;
+    overflow: auto;
+}
+
+.content-top button {
+    float: left;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-burger-menu {
+    width: 24px;
+    height: 24px;
+    fill: #ccc;
+}
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 16px;
+}
+
+.add-button {
+    display: block;
+    margin: 0 0 0 auto;
+    color: #54d582;
+    font-weight: bold;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.add-button:hover,
+.add-button:focus {
+    color: #62df8f;
+}

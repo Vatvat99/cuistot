@@ -1,0 +1,45 @@
+<div class="app-container">
+    <navigation [selectedLink]="selectedLink" [open]="navOpened"></navigation>
+    <div class="content" [class.is-nav-open]="navOpened">
+        <div class="content-top">
+            <navigation-button (onToggleNav)="onToggleNav($event)"></navigation-button>
+            <h1>Nouvelle recette</h1>
+        </div>
+        <form [ngFormModel]="recipeForm" *ngIf="recipeForm" (ngSubmit)="onSubmit()">
+            <input class="gray" type="text" placeholder="Titre" ngControl="title" #name="ngForm">
+            <select ngControl="category" #name="ngForm">
+                <option value="67">Entrées</option>
+                <option value="68">Plats principaux</option>
+                <option value="69">Desserts</option>
+            </select>
+            <label>
+                Temps de préparation (minutes)
+                <input class="gray" type="text" ngControl="time" #name="ngForm">
+            </label>
+
+
+            <label>
+                Photo
+                <input type="file">
+                <input type="hidden" ngControl="picture" #name="ngForm">
+            </label>
+            <h2>Ingrédients</h2>
+            <div ngControlGroup="ingredients">
+                <div *ngFor="#ctrl of objToArray(recipeForm.find('ingredients').controls); #i = index"
+                ngControlGroup="{{ctrl}}">
+                    <input class="gray" type="text" placeholder="Ingrédient" ngControl="ingredient">
+                </div>
+            </div>
+            <button class="add-button" (click)="addIngredient()">Nouvel ingrédient</button>
+            <h2>Etapes</h2>
+            <div ngControlGroup="steps">
+                <div *ngFor="#ctrl of objToArray(recipeForm.find('steps').controls); #i = index"
+                     ngControlGroup="{{ctrl}}">
+                    <textarea class="gray" placeholder="Etape" ngControl="step"></textarea>
+                </div>
+            </div>
+            <button type="button" class="add-button" (click)="addStep()">Nouvelle étape</button>
+            <button class="button expanded" type="submit">Envoyer</button>
+        </form>
+    </div>
+</div>

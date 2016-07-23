@@ -1,0 +1,25 @@
+.content-top {
+    margin-bottom: 32px;
+    overflow: auto;
+}
+
+.content-top button {
+    float: left;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-burger-menu {
+    width: 24px;
+    height: 24px;
+    fill: #ccc;
+}
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 40px;
+}

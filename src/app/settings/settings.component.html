@@ -1,0 +1,28 @@
+<div class="app-container">
+    <navigation [selectedLink]="selectedLink" [open]="navOpened"></navigation>
+    <div class="content" [class.is-nav-open]="navOpened">
+        <div class="content-top">
+            <navigation-button (onToggleNav)="onToggleNav($event)"></navigation-button>
+            <h1>Préférences</h1>
+        </div>
+        <form>
+            <label>
+                E-mail
+                <input class="gray" type="email" value="aurelien.vattant@gmail.com">
+            </label>
+            <label>
+                Nouveau mot de passe
+                <input class="gray" type="password">
+            </label>
+            <label>
+                Confirmez le nouveau mot de passe
+                <input class="gray" type="password">
+            </label>
+            <label>
+                Photo de profil
+                <input type="file">
+            </label>
+            <button class="button expanded" type="submit">Envoyer</button>
+        </form>
+    </div>
+</div>

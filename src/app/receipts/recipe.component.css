@@ -1,0 +1,63 @@
+.content-top {
+    margin-bottom: 32px;
+    overflow: auto;
+}
+
+.content-top a {
+    float: left;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-arrow-left {
+    width: 24px;
+    height: 24px;
+    fill: #ccc;
+}
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 40px;
+}
+
+.recipe-top {
+    text-align: center;
+}
+
+.picture-container {
+    display: inline-block;
+    width: 232px;
+    height: 232px;
+    margin-bottom: 8px;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.picture-container img {
+    width: 100%;
+}
+
+.recipe-top ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+
+.recipe-top li {
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 15px;
+    color: #999;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+p {
+    margin-bottom: 32px;
+}

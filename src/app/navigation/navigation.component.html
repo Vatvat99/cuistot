@@ -1,0 +1,49 @@
+<div id="navigation" class="navigation" [class.is-nav-open]="open">
+    <div class="user-picture">
+        <svg class="icon icon-user-alt" viewBox="0 0 256 256">
+            <path fill-rule="evenodd" d="M32,256H0c0-51.25,29.917-94.917,75-117-13.167-10.25-27-29.583-27-59a80,80,0,0,1,160,0c0,29.333-16,49.917-27,60,36.333,15.083,75,57.75,75,116H224A96,96,0,0,0,32,256Zm96-128c-27.021,0-48-21-48-48s20.938-48,48-48,48,21.125,48,48A47.5,47.5,0,0,1,128,128Z"/>
+        </svg>
+    </div>
+    <ul class="main-nav">
+        <li>
+            <a routerLink="/receipts" routerLinkActive="active">
+                Toutes mes recettes
+            </a>
+        </li>
+        <li>
+            <a>
+                Entrées
+            </a>
+        </li>
+        <li>
+            <a>
+                Plats principaux
+            </a>
+        </li>
+        <li>
+            <a>
+                Desserts
+            </a>
+        </li>
+        <li>
+            <a routerLink="/recipe/new" routerLinkActive="active">
+                <svg class="icon icon-add" viewBox="0 0 256 256">
+                    <path fill-rule="evenodd" d="M128,0A128,128,0,1,1,0,128,128,128,0,0,1,128,0Zm0,32a96,96,0,1,1-96,96A96,96,0,0,1,128,32Zm-16,80V64h32v48h48v32H144v48H112V144H64V112h48Z"/>
+                </svg>
+                Nouvelle recette
+            </a>
+        </li>
+    </ul>
+    <ul class="secondary-nav">
+        <li>
+            <a [routerLink]="['/settings']" (click)="onSelect('settings')" [class.active]="selectedLink == 'settings'">
+                Préférences
+            </a>
+        </li>
+        <li>
+            <a [routerLink]="['/logout']" (click)="onSelect('login')" [class.active]="selectedLink == 'login'">
+                Déconnexion
+            </a>
+        </li>
+    </ul>
+</div>

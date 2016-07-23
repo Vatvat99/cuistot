@@ -1,0 +1,55 @@
+.app-container {
+    background: #1e2d3d url('../../public/img/background.jpg') no-repeat center center;
+}
+
+.content {
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+
+button {
+    text-transform: uppercase;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #ddd;
+    margin: 0;
+    height: 60px;
+    line-height: 60px;
+    border-top: 1px solid #7f8184;
+    text-align: center;
+}
+
+.forgotten-link {
+    font-weight: normal;
+    color: #ddd;
+}
+
+.forgotten-link:hover,
+.forgotten-link:focus {
+    color: #ddd;
+    text-decoration: underline;
+}

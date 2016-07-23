@@ -1,0 +1,40 @@
+--------------------------------------------------------------------------------
+Configuration du projet
+--------------------------------------------------------------------------------
+
+package.json
+- Dépendances chargées via NPM (Node Package Manager)
+
+tsconfig.json
+- Configuration du compilateur JavaScript -> TypeScript
+
+typings.json
+- Charge les fichiers de définition pour les dépendances du projet n'ayant pas
+  de fichier de définition directement inclues dans leur package. (La plupart de
+  librairies ajoutent des nouvelles fonctionnalités au JavaScript que TypeScript
+  doit connaître pour ne pas renvoyer d'erreur à la compilation.)
+
+karma.conf.js
+- @todo
+
+config/webpack.common.js
+- Configuration de webpack commune à tous les environnements
+
+config/helpers.js
+- Fonctions utilisée dans la configuration de webpack
+
+--------------------------------------------------------------------------------
+Installation du projet
+--------------------------------------------------------------------------------
+
+npm install
+- Installe les dépendances du projet gérées via NPM
+
+npm start
+- lance l'application via le serveur de développement
+
+npm test
+- lance les tests unitaires (karma)
+
+npm run build
+- génère les fichiers finaux de l'application

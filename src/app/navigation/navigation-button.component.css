@@ -1,0 +1,13 @@
+.navigation-button {
+    float: left;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navigation-button .icon-burger-menu {
+    width: 24px;
+    height: 24px;
+    fill: #ccc;
+}

@@ -1,0 +1,85 @@
+.content-top {
+    margin-bottom: 32px;
+    overflow: auto;
+}
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 40px;
+}
+
+button {
+    float: left;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-burger-menu {
+    width: 24px;
+    height: 24px;
+    fill: #ccc;
+}
+
+.recipe-container {
+    font-size: 0;
+}
+
+.recipe-thumbnail {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    font-size: 14px;
+    text-align: center;
+    color: #444;
+}
+
+.recipe-thumbnail:hover,
+.recipe-thumbnail:focus {
+    color: #444;
+}
+
+.recipe-thumbnail:hover h2,
+.recipe-thumbnail:focus h2 {
+    text-decoration: underline;
+}
+
+.recipe-thumbnail:nth-child(odd) {
+    padding-right: 8px;
+}
+
+.recipe-thumbnail:nth-child(even) {
+    padding-left: 8px;
+}
+
+.recipe-thumbnail h2 {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.recipe-thumbnail p {
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.recipe-thumbnail .round {
+    display: inline-block;
+    vertical-align: middle;
+    width: 3px;
+    height: 3px;
+    margin: 0 8px;
+    background: #b3b9c1;
+}
+
+.picture-container {
+    display: inline-block;
+    width: 118px;
+    height: 118px;
+    border-radius: 999px;
+    overflow: hidden;
+}

@@ -1,0 +1,15 @@
+<div class="app-container">
+    <div class="content">
+        <p>Toutes mes recettes au même endroit, partout.</p>
+        <h2>Inscription</h2>
+        <form #f="ngForm" (ngSubmit)="onSubmit()">
+            <input class="gray" type="email" placeholder="E-mail" name="email" required [(ngModel)]="user.email">
+            <input class="gray" type="password" placeholder="Mot de passe" name="password" required [(ngModel)]="user.plainPassword">
+            <input class="gray" type="password" placeholder="Confirmer le mot de passe" name="password-confirmation">
+            <button class="button expanded" type="submit">Envoyer</button>
+        </form>
+    </div>
+    <p class="caption">
+        Déjà inscrit ? <a [routerLink]="['/login']">Connectez-vous</a>
+    </p>
+</div>

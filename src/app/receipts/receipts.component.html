@@ -1,0 +1,55 @@
+<div class="app-container">
+    <navigation [selectedLink]="selectedLink" [open]="navOpened"></navigation>
+    <div class="content" [class.is-nav-open]="navOpened">
+        <div class="content-top">
+            <navigation-button (onToggleNav)="onToggleNav($event)"></navigation-button>
+            <h1>Toutes mes recettes</h1>
+        </div>
+        <div class="recipe-container">
+            <a *ngFor="let recipe of receipts" [routerLink]="['/recipe', recipe.slug]" class="recipe-thumbnail">
+                <div class="picture-container">
+                    <img src="{{ picturePath + recipe.picture }}">
+                </div>
+                <h2>{{ recipe.title }}</h2>
+                <p>{{ recipe.time }} Mins<span class="round"></span>{{ recipe.ingredients.length }} Ings</p>
+            </a>
+            <!--
+            <a [routerLink]="['/recipe']" class="recipe-thumbnail">
+                <div class="picture-container">
+                    <img src="../../../public/img/crepes.jpg">
+                </div>
+                <h2>Crêpes à la bière</h2>
+                <p>20 Mins<span class="round"></span>6 Ings</p>
+            </a>
+            <a [routerLink]="['/recipe']" class="recipe-thumbnail">
+                <div class="picture-container">
+                    <img src="../../../public/img/cake.jpg">
+                </div>
+                <h2>Cake aux olives</h2>
+                <p>20 Mins<span class="round"></span>6 Ings</p>
+            </a>
+            <a [routerLink]="['/recipe']" class="recipe-thumbnail">
+                <div class="picture-container">
+                    <img src="../../../public/img/crepes.jpg">
+                </div>
+                <h2>Crêpes à la bière</h2>
+                <p>20 Mins<span class="round"></span>6 Ings</p>
+            </a>
+            <a [routerLink]="['/recipe']" class="recipe-thumbnail">
+                <div class="picture-container">
+                    <img src="../../../public/img/cake.jpg">
+                </div>
+                <h2>Cake aux olives</h2>
+                <p>20 Mins<span class="round"></span>6 Ings</p>
+            </a>
+            <a [routerLink]="['/recipe']" class="recipe-thumbnail">
+                <div class="picture-container">
+                    <img src="../../../public/img/crepes.jpg">
+                </div>
+                <h2>Crêpes à la bière</h2>
+                <p>20 Mins<span class="round"></span>6 Ings</p>
+            </a>
+            -->
+        </div>
+    </div>
+</div>

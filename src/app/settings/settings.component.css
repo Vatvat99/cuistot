@@ -1,0 +1,11 @@
+.content-top {
+    margin-bottom: 32px;
+    overflow: auto;
+}
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 40px;
+}
